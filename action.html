@@ -1,0 +1,50 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body style="font-size:18px; background-color:grey">
+<div onclick="home()" id="home" style="background-color:white"><font align=center size=6 color=green><b><i>Groovy Movies</i></b></font></div><br><br><br><br>
+<div style="margin-left:50px">
+<font align=center size=5><b><i>Top 5 Action/Adventure movies</i></b></font><br>
+<div id="img1"> 
+</div>
+<button id="prev1" onclick="prev()" style="color:white; background-color:red; padding:16px; font-size:16px; position:relative;">Previous</button>
+<button id="next1" onclick="next()" style="color:white; background-color:green; padding:16px; font-size:16px;  position:relative; left:525px;">Next</button>
+<br><br>
+<h2>Leave a Comment</h2>
+<form id="com5" action="ph.php">
+Email address: <input type="email" name="email"><br><br>
+       <textarea  name="comments" cols="40" rows="10" form="com5"></textarea><br><br>
+<input type="submit" name="sub" value="Submit">
+</form>
+</div>
+<script src="WT1.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body style="font-size:18px; background-color:grey">
+<div onclick="home()" id="home" style="background-color:white"><font align=center size=6 color=green><b><i>Groovy Movies</i></b></font></div><br><br><br><br>
+<div style="margin-left:50px">
+<font align=center size=5><b><i>Top 5 Action/Adventure movies</i></b></font><br>
+<div id="img1"> 
+</div>
+<button id="prev1" onclick="prev(this)" style="color:white; background-color:red; padding:16px; font-size:16px; position:relative;">Previous</button>
+<button id="next1" onclick="next(this)" style="color:white; background-color:green; padding:16px; font-size:16px;  position:relative; left:525px;">Next</button>
+<br><br>
+<h2>Leave a Comment</h2>
+<form id="com5" action="ph.php" method="POST">
+Email address: <input type="email" name="email"><br><br>
+       <textarea  name="comments" cols="40" rows="10" form="com5"></textarea><br><br>
+<input type="submit" name="sub" value="Submit">
+</form>
+</div>
+<script src="Wt.js"></script>
+</body>
+</html>
+

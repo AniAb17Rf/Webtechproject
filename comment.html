@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Comments
+</title>
+</head>
+<body align="center">
+<h1> Comments Sections </h1>
+<?php
+echo "<h1> Comments Sections</h1>";
+$conn = mysqli_connect("localhost", "root", "", "test");
+if($conn-> connect_error) {
+die("connection failed: ". $conn-> connect_error);
+}
+$sql = "SELECT email,comments from com";
+$result = $conn->query($sql);
+if($result-> num_rows > 0) {
+while($row = $result->fetch_assoc()){
+"<div style=\"padding-left:50px\" >";
+echo "<h4>". $row["email"] ."</h2><br><h4>". $row["comments"] ."</h4><br><br><br><br>";
+"</div>";
+}
+}
+else{
+echo"<h2> Comments section is blank</h2>";
+}
+
+?>
